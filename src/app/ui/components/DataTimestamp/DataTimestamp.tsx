@@ -9,7 +9,6 @@ const DataTimestamp: React.FC = () => {
 
 	return (
 		<div className={styles.timestamp}>
-			Data updated on {date ? date.toLocaleDateString() : '???'} at {date ? date.toLocaleTimeString() : '???'}
 		</div>
 	);
 };
