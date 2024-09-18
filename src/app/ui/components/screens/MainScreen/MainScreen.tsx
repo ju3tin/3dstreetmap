@@ -9,7 +9,6 @@ import TimePanel from "~/app/ui/components/TimePanel";
 import styles from './MainScreen.scss';
 import DataTimestamp from "~/app/ui/components/DataTimestamp";
 import AudioPlayer from "~/app/ui/components/AudioPlayer"; // Import the AudioPlayer component
-import Audiofile from "~/resources/music/1.mp3";
 
 const MainScreen: React.FC = (): JSX.Element => { // Added return type
   const atoms = useContext(AtomsContext);
@@ -57,7 +56,7 @@ const MainScreen: React.FC = (): JSX.Element => { // Added return type
       <TimePanel />
       <SelectionPanel />
       
-      <AudioPlayer src="/music/1.mp3" /> {/* Add the AudioPlayer component here */}
+      <AudioPlayer /> {/* Add the AudioPlayer component here */}
       
       {
         isRenderGraphVisible && (

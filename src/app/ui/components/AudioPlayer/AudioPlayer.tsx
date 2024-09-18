@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import styles from './AudioPlayer.scss'; // Import your CSS module
+import audioFile from './audio/1.mp3'; // Import the audio file
+
 
 
 const AudioPlayer: React.FC<{ src: string }> = ({ src }): JSX.Element => { // Added return type
@@ -29,7 +31,7 @@ const AudioPlayer: React.FC<{ src: string }> = ({ src }): JSX.Element => { // Ad
 
   return (
     <div className={styles.audioPlayer}>
-      <audio ref={audioRef} src={src} />
+      <audio ref={audioRef} src={audioFile} />
       <button onClick={playAudio}>Play</button>
       <button onClick={pauseAudio}>Pause</button>
     </div>

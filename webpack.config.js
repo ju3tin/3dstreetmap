@@ -62,6 +62,10 @@ module.exports = (env, argv) => ([{
 	module: {
 		rules: [
 			{
+				test: /\.mp3$/,
+				use: 'file-loader',
+			  },
+			{
 				test: /\.vert|.frag|.glsl$/i,
 				use: [
 					{
