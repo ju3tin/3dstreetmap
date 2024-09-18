@@ -4,9 +4,7 @@ import styles from './LegalAttributionPanel.scss';
 
 const LegalAttribution: React.FC = () => {
 	return <Panel className={styles.attributionPanel}>
-		© <a href={'https://www.openstreetmap.org/copyright'} target={'_blank'}>OpenStreetMap</a>
-		{' '}
-		© <span>Powered by Esri</span>
+		<span></span>
 	</Panel>
 }
 
