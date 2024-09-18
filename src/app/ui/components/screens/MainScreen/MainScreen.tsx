@@ -9,8 +9,13 @@ import TimePanel from "~/app/ui/components/TimePanel";
 import styles from './MainScreen.scss';
 import DataTimestamp from "~/app/ui/components/DataTimestamp";
 import AudioPlayer from "~/app/ui/components/AudioPlayer"; // Import the AudioPlayer component
+import Introduction from "~/app/ui/components/Introduction"; // Import the Introduction component
 
 const MainScreen: React.FC = (): JSX.Element => { // Added return type
+const [isIntroductionVisible, setIsIntroductionVisible] = useState<boolean>(true); // State to control introduction visibility
+
+const closeIntroduction = useCallback((): void => setIsIntroductionVisible(false), []); // Function to close introduction
+  
   const atoms = useContext(AtomsContext);
   const actions = useContext(ActionsContext);
 
@@ -50,13 +55,13 @@ const MainScreen: React.FC = (): JSX.Element => { // Added return type
 
   return (
     <div className={containerClassNames}>
+		{isIntroductionVisible && <Introduction onClose={closeIntroduction} />} {/* Render Introduction if visible */}
       <SearchPanel />
       <DebugInfo showRenderGraph={showRenderGraph} />
       <DataTimestamp />
       <TimePanel />
       <SelectionPanel />
-      
-      <AudioPlayer /> {/* Add the AudioPlayer component here */}
+      <AudioPlayer />
       
       {
         isRenderGraphVisible && (
