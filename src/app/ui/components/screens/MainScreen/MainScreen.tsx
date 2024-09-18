@@ -73,7 +73,7 @@ const MainScreen: React.FC = () => {
 			<TimePanel/>
 			<SelectionPanel/>
 		
-			<GeolocationButton/>
+			
 			{
 				isRenderGraphVisible && (
 					<RenderGraphViewer
