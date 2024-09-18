@@ -9,7 +9,7 @@ const AudioPlayer: React.FC<{ src: string }> = ({ src }): JSX.Element => { // Ad
 
   const playAudio = (): void => { // Added return type
     if (audioRef.current) {
-      audioRef.current.play();
+      audioRef.current.pause();
     }
   };
 
