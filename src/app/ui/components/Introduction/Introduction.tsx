@@ -1,5 +1,5 @@
 import React from 'react';
-//import styles from './Introduction.scss';
+import styles from './Introduction.scss';
 
 interface IntroductionProps {
   onClose: () => void; // Function to handle closing the introduction
@@ -7,7 +7,7 @@ interface IntroductionProps {
 
 const Introduction: React.FC<IntroductionProps> = ({ onClose }) => {
   return (
-    <div>
+    <div className='introduction'>
       <h2>Welcome to the Application!</h2>
       <p>This is an introduction to the features and functionalities.</p>
       <button onClick={onClose}>Close</button>
