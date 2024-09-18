@@ -7,7 +7,6 @@ import RenderGraphViewer from "~/app/ui/components/RenderGraphViewer";
 import SearchPanel from "~/app/ui/components/SearchPanel";
 import TimePanel from "~/app/ui/components/TimePanel";
 import styles from './MainScreen.scss';
-import SavedPlacesModalPanel from "~/app/ui/components/SavedPlacesModalPanel";
 import DataTimestamp from "~/app/ui/components/DataTimestamp";
 
 const MainScreen: React.FC = () => {
