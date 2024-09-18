@@ -7,7 +7,7 @@ interface IntroductionProps {
 
 const Introduction: React.FC<IntroductionProps> = ({ onClose }) => {
   return (
-    <div className='introduction'>
+    <div {styles.introduction}>
       <h2>Welcome to the Application!</h2>
       <p>This is an introduction to the features and functionalities.</p>
       <button onClick={onClose}>Close</button>
