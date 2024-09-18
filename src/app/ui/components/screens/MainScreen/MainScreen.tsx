@@ -1,7 +1,6 @@
 import React, {useCallback, useContext, useEffect, useState} from "react";
 import {useRecoilValue} from "recoil";
 import DebugInfo from "~/app/ui/components/DebugInfo";
-import CompassPanel from "~/app/ui/components/CompassPanel";
 import SelectionPanel from "~/app/ui/components/SelectionPanel";
 import {ActionsContext, AtomsContext} from "~/app/ui/UI";
 import RenderGraphViewer from "~/app/ui/components/RenderGraphViewer";
@@ -73,7 +72,7 @@ const MainScreen: React.FC = () => {
 			<DataTimestamp/>
 			<TimePanel/>
 			<SelectionPanel/>
-			<CompassPanel/>
+		
 			<GeolocationButton/>
 			{
 				isRenderGraphVisible && (
