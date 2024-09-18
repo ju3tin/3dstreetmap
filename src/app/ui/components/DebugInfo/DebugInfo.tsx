@@ -10,16 +10,6 @@ const DebugInfo: React.FC<{showRenderGraph: () => void}> = ({showRenderGraph}) =
 
 	return (
 		<div className={styles.debugInfo}>
-			<div className={styles.debugInfo__item}>{Math.round(fps)} FPS</div>
-			<div className={styles.debugInfo__item}>{frameTime.toFixed(1)} ms</div>
-			<div
-				className={
-					styles.debugInfo__item + ' ' + styles['debugInfo__item--small'] + ' ' + styles['debugInfo__item--clickable']
-				}
-				onClick={showRenderGraph}
-			>
-				RG
-			</div>
 		</div>
 	);
 };
