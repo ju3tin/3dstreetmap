@@ -57,7 +57,7 @@ const MainScreen: React.FC = (): JSX.Element => { // Added return type
       <TimePanel />
       <SelectionPanel />
       
-      <AudioPlayer src={Audiofile} /> {/* Add the AudioPlayer component here */}
+      <AudioPlayer src="/music/1.mp3" /> {/* Add the AudioPlayer component here */}
       
       {
         isRenderGraphVisible && (
