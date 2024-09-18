@@ -1,5 +1,4 @@
 import React, {useCallback, useContext, useEffect, useState} from "react";
-import LegalAttributionPanel from "~/app/ui/components/LegalAttributionPanel";
 import {useRecoilValue} from "recoil";
 import DebugInfo from "~/app/ui/components/DebugInfo";
 import CompassPanel from "~/app/ui/components/CompassPanel";
@@ -74,7 +73,6 @@ const MainScreen: React.FC = () => {
 			<DataTimestamp/>
 			<TimePanel/>
 			<SelectionPanel/>
-			<LegalAttributionPanel/>
 			<CompassPanel/>
 			<GeolocationButton/>
 			{
