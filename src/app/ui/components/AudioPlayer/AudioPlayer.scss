@@ -1,0 +1,11 @@
+/* SolanaBnk/src/app/ui/components/AudioPlayer.module.scss */
+.audioPlayer {
+    position: fixed; /* Fixes the position relative to the viewport */
+    bottom: 20px;    /* Distance from the bottom */
+    right: 20px;     /* Distance from the right */
+    z-index: 1000;   /* Ensures it appears above other elements */
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: background for better visibility */
+    padding: 10px;   /* Optional: padding for aesthetics */
+    border-radius: 5px; /* Optional: rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Optional: shadow for depth */
+  }
