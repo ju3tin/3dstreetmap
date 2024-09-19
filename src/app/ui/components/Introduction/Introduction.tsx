@@ -17,6 +17,7 @@ const Introduction: React.FC<IntroductionProps> = ({ onClose }) => {
 
   return (
     <div className={styles.introduction}>
+    <div className={styles.backgroundImages} /> 
       <h2>Welcome to the Application!</h2>
       <p>This is an introduction to the features and functionalities.</p>
       <button onClick={handleClose}>Close</button>

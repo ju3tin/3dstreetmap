@@ -12,3 +12,14 @@
     padding: 0;
     top: -20px;
 }
+.backgroundImages {
+    position: absolute; // Position it absolutely within the parent
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/images/dude34.jpeg'), url('/images/red1.png'); // Add your image paths
+    background-size: cover; // Cover the entire div
+    background-position: center; // Center the images
+    z-index: -1; // Send it behind the content
+  }
