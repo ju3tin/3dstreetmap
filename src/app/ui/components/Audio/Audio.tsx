@@ -8,7 +8,7 @@ const Audio: React.FC<{ src: string }> = ({ src }): JSX.Element => {
 return (
     <div>
 <audio controls>
-  <source src="/music/1.mp3" type="audio/mpeg" />
+  <source src="https://github.com/ju3tin/3dstreetmap/raw/main/public/music/1.mp3" type="audio/mpeg" />
 </audio>
 </div>
   );
