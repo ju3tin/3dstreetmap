@@ -18,7 +18,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('/images/dude34.jpeg'), url('/images/red1.png'); // Add your image paths
+    background-image: url('/images/red1.png'), url('/images/dude34.jpeg'); // Add your image paths
     background-size: cover; // Cover the entire div
     background-position: center; // Center the images
     z-index: -1; // Send it behind the content
