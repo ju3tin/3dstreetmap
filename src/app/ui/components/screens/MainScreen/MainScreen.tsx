@@ -8,6 +8,7 @@ import SearchPanel from "~/app/ui/components/SearchPanel";
 import TimePanel from "~/app/ui/components/TimePanel";
 import styles from './MainScreen.scss';
 import DataTimestamp from "~/app/ui/components/DataTimestamp";
+import Audio from "~/app/ui/components/Audio";
 import AudioPlayer from "~/app/ui/components/AudioPlayer"; // Import the AudioPlayer component
 import Introduction from "~/app/ui/components/Introduction"; // Import the Introduction component
 import audioFile from '../../AudioPlayer/audio/1.mp3'; // Import the audio file
@@ -63,8 +64,8 @@ const closeIntroduction = useCallback((): void => setIsIntroductionVisible(false
       <DataTimestamp />
       <TimePanel />
       <SelectionPanel />
-      <AudioPlayer src={audioFile} />
-      
+      <Audio />{/* Add the AudioPlayer component here */}
+       
       {
         isRenderGraphVisible && (
           <RenderGraphViewer

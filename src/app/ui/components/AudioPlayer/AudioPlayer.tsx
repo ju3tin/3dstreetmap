@@ -31,7 +31,7 @@ const AudioPlayer: React.FC<{ src: string }> = ({ src }): JSX.Element => { // Ad
 
   return (
     <div className={styles.audioPlayer}>
-      <audio ref={audioRef} src={audioFile} />
+      <audio ref={audioRef} src={src} />
       <button onClick={playAudio}>Play</button>
       <button onClick={pauseAudio}>Pause</button>
     </div>
